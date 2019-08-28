@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/believe/CLionProjects/TddPractice/src/Bowling.cpp
+Bowling.h
+/home/believe/CLionProjects/TddPractice/src/Bowling.h
+
+/home/believe/CLionProjects/TddPractice/src/Bowling.h
+
+/home/believe/CLionProjects/TddPractice/test/BowlingTest.cpp
+../src/Bowling.h
+/home/believe/CLionProjects/TddPractice/src/Bowling.h
+gtest/gtest.h
+-
+
+/home/believe/CLionProjects/TddPractice/test/main.cpp
+iostream
+-
+gtest/gtest.h
+/home/believe/CLionProjects/TddPractice/test/gtest/gtest.h
+

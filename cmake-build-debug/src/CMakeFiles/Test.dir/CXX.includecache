@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/believe/CLionProjects/Test/src/Bowling.cpp
+Bowling.h
+/home/believe/CLionProjects/Test/src/Bowling.h
+
+/home/believe/CLionProjects/Test/src/Bowling.h
+
+/home/believe/CLionProjects/Test/src/main.cpp
+iostream
+-
+gtest/gtest.h
+/home/believe/CLionProjects/Test/src/gtest/gtest.h
+

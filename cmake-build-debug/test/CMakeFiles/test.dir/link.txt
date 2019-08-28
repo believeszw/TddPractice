@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/test.dir/BowlingTest.cpp.o CMakeFiles/test.dir/main.cpp.o CMakeFiles/test.dir/__/src/Bowling.cpp.o  -o test -lgtest -lgtest_main -lpthread 
