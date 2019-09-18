@@ -1,7 +1,16 @@
 project(TddPractice)
 
-add_executable(test BowlingTest.cpp main.cpp ../src/Bowling.cpp)
+include_directories(${PROJECT_SOURCE_DIR}/../include)
+link_directories(${PROJECT_SOURCE_DIR}/../gtest)
 
-link_directories(${PROJECT_SOURCE_DIR}/gtest)
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin/${COMPILE_PLAT})
 
-target_link_libraries(test gtest gtest_main -lpthread)
+SET(TEST_SRC BowlingTest.cpp main.cpp ../src/Bowling.cpp)
+
+SET(TEST_LIB gtest gtest_main -lpthread)
+
+add_executable(BowlingTest ${TEST_SRC})
+
+target_link_libraries(BowlingTest ${TEST_LIB})
+INSTALL(TARGETS BowlingTest DESTINATION ${EXECUTABLE_OUTPUT_PATH})
+

@@ -17,25 +17,22 @@ int Bowling::GetScore(char *str) {
     }
     if (turn_count > 11) arr_count[index]--;
     sum += ResolveChar(str, index) * (arr_count[index++] + 1);
-  }while(*++str);
+  } while (*++str);
   return sum;
 }
 
 int Bowling::ResolveChar(char *c, int index) {
-  switch(*c) {
+  switch (*c) {
     case 'X':
-      if (turn_count < 11){
+      if (turn_count < 11) {
         arr_count[++index]++;
         arr_count[++index]++;
       }
       return 10;
-    case '-':
-      return 0;
-    case '/':
-      arr_count[++index]++;
+    case '-':return 0;
+    case '/':arr_count[++index]++;
       return 10 - *--c + '0';
-    default:
-      return *c - '0';
+    default:return *c - '0';
   }
 }
 

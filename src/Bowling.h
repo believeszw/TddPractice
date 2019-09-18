@@ -13,7 +13,7 @@ class Bowling {
   int turn_count = 1;
  public:
 
-  int ResolveChar(char* c, int index);
+  int ResolveChar(char *c, int index);
   int GetScore(char *str);
 };
 
